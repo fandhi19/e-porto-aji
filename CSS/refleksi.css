@@ -906,8 +906,35 @@ body {
 
 /* --- 9. RESPONSIVE DESIGN (MOBILE & TABLET) --- */
 @media (max-width: 992px) {
+  /* Mobile Navbar */
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar.scrolled {
+    padding: 10px 0;
+  }
+  .univ-logo-img {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .refleksi-main {
+    padding-top: 75px;
+  }
+  .hero-refleksi {
+    padding: 35px 0 20px;
+  }
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 
   /* Stepper Mobile */
@@ -985,6 +1012,9 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: rgba(255, 255, 255, 0.98);
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -1026,5 +1056,25 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .step-icon {
+    min-width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .stepper-track {
+    left: 22px;
+  }
+  .card-insight {
+    padding: 20px 16px;
+  }
+  .card-insight h3 {
+    font-size: 1.2rem;
   }
 }

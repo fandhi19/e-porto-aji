@@ -939,14 +939,50 @@ body {
 
 /* --- 9. RESPONSIVE DESIGN (MOBILE & TABLET) --- */
 @media (max-width: 992px) {
+  /* Mobile Navbar */
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar.scrolled {
+    padding: 10px 0;
+  }
+  .univ-logo-img {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .artefak-main {
+    padding-top: 75px;
+  }
+  .hero-artefak {
+    padding: 35px 0 20px;
+  }
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .hero-stats-row {
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  .hero-stat-badge {
+    font-size: 0.78rem;
+    padding: 6px 14px;
   }
 
   /* Identity Bar Responsive */
   .doc-identity-bar {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
   }
   .identity-item {
@@ -956,10 +992,19 @@ body {
   /* PDF Wrapper */
   .pdf-wrapper {
     height: 500px;
+    min-height: 440px;
   }
   .doc-actions {
     flex-direction: column;
+    width: 100%;
     gap: 10px;
+  }
+  .doc-actions a,
+  .doc-actions button {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 0.9rem;
   }
 
   /* Zigzag Responsive */
@@ -1017,6 +1062,9 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: rgba(255, 255, 255, 0.98);
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -1062,11 +1110,62 @@ body {
 }
 
 @media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .hero-pill-tag {
+    font-size: 0.78rem;
+    padding: 5px 12px;
+  }
   .doc-identity-bar {
     grid-template-columns: 1fr;
   }
   .pdf-wrapper {
-    height: 400px;
+    height: 420px;
+    min-height: 360px;
+  }
+  .cycle-pill-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+  .cycle-analysis-header h4 {
+    font-size: 1.15rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .analysis-card-item {
+    padding: 22px 18px;
+  }
+  .analysis-card-item h3 {
+    font-size: 1.15rem;
+  }
+  .video-player-container {
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .artefak-main {
+    padding-top: 70px;
+  }
+  .hero-artefak {
+    padding: 25px 0 15px;
+  }
+  .hero-title {
+    font-size: 1.7rem;
+  }
+  .hero-desc {
+    font-size: 0.92rem;
+  }
+  .hero-stat-badge {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.78rem;
+    padding: 8px 12px;
   }
 }
 

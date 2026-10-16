@@ -935,22 +935,91 @@ body {
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 992px) {
+  /* Navbar Mobile */
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar.scrolled {
+    padding: 10px 0;
+  }
+  .univ-logo-img {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 16px;
+  }
+
+  /* Hero Section Mobile */
+  .hero-modern {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: block;
+  }
   .hero-container {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
+  }
+  .hero-text-content {
+    text-align: center;
   }
   .hero-text-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+  .hero-text-content p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-buttons {
     justify-content: center;
-  }
-  .profile-showcase {
-    width: 320px;
-    height: 320px;
-    margin: 0 auto;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
+  /* Profile Showcase in Hero */
+  .profile-showcase {
+    width: 280px;
+    height: 280px;
+    margin: 30px auto 25px;
+  }
+  .profile-image {
+    object-position: center 20%;
+  }
+  .float-badge {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    border-radius: 16px;
+    white-space: nowrap;
+    gap: 8px;
+  }
+  .float-badge .icon-box {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .badge-1 {
+    top: -12px;
+    left: -5px;
+  }
+  .badge-2 {
+    bottom: 25px;
+    right: -5px;
+  }
+  .badge-3 {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Bento Grid */
   .bento-grid {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -1011,7 +1080,7 @@ body {
     justify-content: center;
   }
 
-  /* Mobile Nav */
+  /* Mobile Nav Dropdown */
   .nav-right {
     display: none;
   }
@@ -1025,6 +1094,9 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: rgba(255, 255, 255, 0.98);
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -1072,5 +1144,88 @@ body {
 @media (max-width: 600px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons .btn-glow,
+  .hero-buttons .btn-outline-sport {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.92rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-modern {
+    padding-top: 90px;
+  }
+  .hero-text-content h1 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .badge-tech {
+    font-size: 11px;
+    padding: 6px 14px;
+    margin-bottom: 12px;
+  }
+  .hero-text-content p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  .profile-showcase {
+    width: 240px;
+    height: 240px;
+    margin: 25px auto 20px;
+  }
+  .float-badge {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+  .float-badge .icon-box {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+  }
+  .badge-1 {
+    top: -10px;
+    left: 0;
+  }
+  .badge-2 {
+    bottom: 20px;
+    right: 0;
+  }
+  .badge-3 {
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.68rem;
+  }
+  .bento-box {
+    padding: 22px 18px;
+  }
+  .bento-box h3 {
+    font-size: 1.2rem;
+  }
+  .section-title-modern h2 {
+    font-size: 1.85rem;
+  }
+  .step-content {
+    padding: 20px 16px;
+  }
+  .step-content h3 {
+    font-size: 1.25rem;
+  }
+  .step-marker {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 16px;
+  }
+  .journey-line {
+    left: 16px;
   }
 }

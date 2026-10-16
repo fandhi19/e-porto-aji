@@ -786,8 +786,24 @@ body {
 
 /* --- 8. RESPONSIVE DESIGN (MOBILE & TABLET) --- */
 @media (max-width: 992px) {
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar.scrolled {
+    padding: 10px 0;
+  }
+  .instrumen-main {
+    padding-top: 75px;
+  }
+  .hero-instrumen {
+    padding: 35px 0 20px;
+  }
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    line-height: 1.25;
+  }
+  .hero-desc {
+    font-size: 1rem;
   }
 
   /* Split Showcase Responsive */
@@ -849,6 +865,9 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: rgba(255, 255, 255, 0.98);
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -899,5 +918,43 @@ body {
   }
   .cycle-tabs {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .univ-logo-img {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 16px;
+  }
+  .instrumen-main {
+    padding-top: 70px;
+  }
+  .hero-instrumen {
+    padding: 25px 0 15px;
+  }
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .hero-desc {
+    font-size: 0.92rem;
+  }
+  .showcase-grid {
+    padding: 18px 14px;
+    border-radius: 20px;
+  }
+  .panel-header h3 {
+    font-size: 1.45rem;
+  }
+  .pdf-wrapper {
+    height: 360px;
+  }
+  .btn-outline-sport,
+  .btn-glow {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    width: 100%;
   }
 }
