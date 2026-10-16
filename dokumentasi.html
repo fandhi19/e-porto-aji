@@ -27,25 +27,32 @@
 
         <nav class="nav-right" id="nav-menu">
           <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profile.html" class="nav-link"> Profil</a>
 
           <div class="dropdown">
-            <button class="nav-link dropbtn">E-Portofolio 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <button class="nav-link dropbtn">Jejak PPL 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
             <div class="dropdown-content">
-              <a href="profile.html"><i class="fa-solid fa-user-graduate"></i> Profil Mahasiswa</a>
-              <a href="artefak.html"><i class="fa-solid fa-file-waveform"></i> Artefak Produk</a>
-              <a href="penilaian.html"><i class="fa-solid fa-list-check"></i> Instrumen Penilaian</a>
-              <a href="modelguru.html"><i class="fa-solid fa-bullseye"></i> Model Guru</a>
+              <a href="PPL_1/profile.html"><i class="fa-solid fa-user-graduate"></i> Profil Mahasiswa</a>
+              <a href="PPL_1/artefak.html"><i class="fa-solid fa-file-waveform"></i> Artefak Produk</a>
+              <a href="PPL_1/penilaian.html"><i class="fa-solid fa-list-check"></i> Instrumen Penilaian</a>
+              <a href="PPL_1/modelguru.html"><i class="fa-solid fa-bullseye"></i> Model Guru</a>
             </div>
           </div>
 
           <div class="dropdown">
-            <button class="nav-link dropbtn">E-Portofolio 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <button class="nav-link dropbtn">Jejak PPL 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
             <div class="dropdown-content">
-              <a href="refleksi.html"><i class="fa-solid fa-arrows-rotate"></i> Refleksi Akhir</a>
-              <a href="filosofi.html"><i class="fa-solid fa-seedling"></i> Filosofi Mengajar</a>
+              <a href="PPL_2/rancangan.html"><i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran</a>
+              <a href="PPL_2/materi.html"><i class="fa-solid fa-book-open"></i> Materi Pembelajaran</a>
+              <a href="PPL_2/media.html"><i class="fa-solid fa-photo-film"></i> Media Pembelajaran</a>
+              <a href="PPL_2/video.html"><i class="fa-solid fa-video"></i> Video Praktik Mengajar</a>
+              <a href="PPL_2/non-mengajar.html"><i class="fa-solid fa-people-group"></i> Kegiatan Non-Mengajar</a>
+              <a href="PPL_2/instrumen.html"><i class="fa-solid fa-list-check"></i> Instrumen Penilaian</a>
             </div>
           </div>
 
+          <a href="refleksi.html" class="nav-link">Refleksi</a>
+          <a href="filosofi.html" class="nav-link">Filosofi</a>
           <a href="dokumentasi.html" class="nav-link active">Dokumentasi</a>
         </nav>
       </div>
@@ -54,107 +61,320 @@
     <main class="dokumentasi-main">
       <section class="hero-dokumentasi">
         <div class="container text-center">
-          <div class="badge-tech fade-in-up" style="animation-delay: 0.1s"><i class="fa-solid fa-camera-retro"></i> Rekam Jejak Lapangan</div>
-          <h1 class="hero-title fade-in-up" style="animation-delay: 0.3s">Dokumentasi <span class="text-gradient">Kegiatan</span></h1>
-          <p class="hero-desc fade-in-up" style="animation-delay: 0.5s">Kumpulan momen inspiratif, aksi nyata, dan dinamika pembelajaran selama mengikuti program PPG Prajabatan dan Praktik Pengalaman Lapangan (PPL).</p>
+          <div class="badge-tech fade-in-up" style="animation-delay: 0.1s"><i class="fa-solid fa-camera-retro"></i> Rekam Jejak Lapangan PPL PPG</div>
+          <h1 class="hero-title fade-in-up" style="animation-delay: 0.25s">Dokumentasi <span class="text-gradient">Kegiatan</span></h1>
+          <p class="hero-desc fade-in-up" style="animation-delay: 0.4s">
+            Koleksi visual autentik dinamika Praktik Pengalaman Lapangan (PPL) PPG Prajabatan di SMP Negeri 2 Bantul. Terdiri dari fase <strong>PPL Terbimbing (PPL 1)</strong> yang menitikberatkan asistensi &amp; observasi pedagogik, serta <strong>PPL Mandiri (PPL 2)</strong> yang memperluas tanggung jawab pengajaran, kepengawasan, dan integrasi budaya sekolah.
+          </p>
+
+          <!-- Highlights Row -->
+          <div class="hero-stats-row fade-in-up" style="animation-delay: 0.55s">
+            <div class="hero-stat-badge">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Total 12 Momen Lapangan</span>
+            </div>
+            <div class="hero-stat-badge">
+              <i class="fa-solid fa-chalkboard-user" style="color: #26d0ce"></i>
+              <span>6 PPL Terbimbing (PPL 1)</span>
+            </div>
+            <div class="hero-stat-badge">
+              <i class="fa-solid fa-user-check" style="color: #ff7e5f"></i>
+              <span>6 PPL Mandiri (PPL 2)</span>
+            </div>
+            <div class="hero-stat-badge">
+              <i class="fa-solid fa-school"></i>
+              <span>SMP Negeri 2 Bantul</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="gallery-section reveal">
         <div class="container">
-          <!-- <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">Semua Momen</button>
-            <button class="filter-btn" data-filter="foto"><i class="fa-regular fa-image"></i> Galeri Foto</button>
-            <button class="filter-btn" data-filter="video"><i class="fa-solid fa-video"></i> Galeri Video</button>
-          </div> -->
+          <!-- Segmented Filter Switcher -->
+          <div class="filter-tabs-wrap">
+            <div class="filter-tab-switch">
+              <button type="button" class="filter-tab-btn active" data-filter="all">
+                <i class="fa-solid fa-shapes"></i>
+                <span>Semua Dokumentasi</span>
+                <span class="pill-counter">12 Momen</span>
+              </button>
+              <button type="button" class="filter-tab-btn" data-filter="ppl1">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>PPL Terbimbing (PPL 1)</span>
+                <span class="pill-counter">6 Momen</span>
+              </button>
+              <button type="button" class="filter-tab-btn" data-filter="ppl2">
+                <i class="fa-solid fa-user-check"></i>
+                <span>PPL Mandiri (PPL 2)</span>
+                <span class="pill-counter">6 Momen</span>
+              </button>
+            </div>
+          </div>
 
+          <!-- Dynamic Masonry Gallery Grid -->
           <div class="gallery-grid" id="gallery-grid">
-            <div class="gallery-item filter-item foto">
+            <!-- ================= PPL 1 : TERBIMBING ================= -->
+            <!-- 1. Penerjunan -->
+            <div
+              class="gallery-item filter-item ppl1 tall"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Penerjunan &amp; Orientasi Mahasiswa PPL"
+              data-desc="Serah terima resmi mahasiswa PPG Prajabatan PJOK kepada pihak pimpinan dan jajaran guru pamong SMP Negeri 2 Bantul untuk mengawali masa orientasi sekolah mitra."
+              data-img="IMG/PPL_1/penerjunan.jpeg"
+            >
               <div class="item-inner">
-                <img src="IMG/penerjunan.jpeg" alt="Penerjunan PPL Terbimbing" />
+                <img src="IMG/PPL_1/penerjunan.jpeg" alt="Penerjunan PPL Terbimbing" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
                 <div class="item-overlay">
                   <div class="overlay-content">
-                    <span class="tag">PPL Terbimbing</span>
-                    <h3>Penerjunan PPL Terbimbing</h3>
-                    <p>Masa pernejunan PPL Terbimbing dan Orientasi PPL</p>
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-chalkboard-user"></i> PPL Terbimbing</span>
+                    <h3>Penerjunan &amp; Orientasi PPL</h3>
+                    <p>Serah terima resmi mahasiswa PPG Prajabatan dan masa orientasi lingkungan sekolah mitra.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="gallery-item filter-item foto tall">
+            <!-- 2. Perkenalan -->
+            <div
+              class="gallery-item filter-item ppl1"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Perkenalan dengan Siswa &amp; Guru Pamong"
+              data-desc="Momen temu ramah awal dan adaptasi sosial di ruang kelas untuk membangun kedekatan emosional, komunikasi positif, dan pemahaman tata tertib belajar."
+              data-img="IMG/PPL_1/perkenalan.jpeg"
+            >
               <div class="item-inner">
-                <img src="IMG/perkenalan.jpeg" alt="Perkenalan dengan Siswa" />
+                <img src="IMG/PPL_1/perkenalan.jpeg" alt="Perkenalan dengan Siswa" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
                 <div class="item-overlay">
                   <div class="overlay-content">
-                    <span class="tag">PPL Terbimbing</span>
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-users"></i> PPL Terbimbing</span>
                     <h3>Perkenalan dengan Siswa</h3>
-                    <p>Momen perkenalan antara mahasiswa PPL dan siswa di sekolah.</p>
+                    <p>Sesi temu ramah awal membangun rapport emosional yang suportif di kelas.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="gallery-item filter-item foto tall">
+            <!-- 3. Observasi -->
+            <div
+              class="gallery-item filter-item ppl1"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Observasi Karakteristik Siswa &amp; Sarpras PJOK"
+              data-desc="Pengamatan mendalam terhadap iklim belajar, ketersediaan sarana prasarana olahraga, serta keberagaman kesiapan motorik peserta didik di lapangan."
+              data-img="IMG/PPL_1/observasi.jpeg"
+            >
               <div class="item-inner">
-                <img src="IMG/kunjungan dpl.jpeg" alt="Kunjungan DPL" />
+                <img src="IMG/PPL_1/observasi.jpeg" alt="Observasi Lingkungan Sekolah" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
                 <div class="item-overlay">
                   <div class="overlay-content">
-                    <span class="tag">PPL Terbimbing</span>
-                    <h3>Kunjungan DPL</h3>
-                    <p>Momen kunjungan DPL ke sekolah untuk observasi dan evaluasi.</p>
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-clipboard-check"></i> PPL Terbimbing</span>
+                    <h3>Observasi Lingkungan &amp; Sarpras</h3>
+                    <p>Pengamatan karakteristik peserta didik, lingkungan belajar, dan inventaris olahraga.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="gallery-item filter-item video">
-              <div class="item-inner video-card">
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"
-                  title="Video Kegiatan PPL"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <div class="video-info">
-                  <h3>Praktik Pembelajaran Senam Lantai</h3>
-                  <p><i class="fa-solid fa-location-dot"></i> SMA Negeri 4 Surakarta</p>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="gallery-item filter-item foto">
+            <!-- 4. Praktik 1 (Wide) -->
+            <div
+              class="gallery-item filter-item ppl1 wide"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Praktik Pembelajaran Terbimbing di Lapangan"
+              data-desc="Implementasi modul ajar PJOK terbimbing berorientasi student-centered learning di bawah asistensi, supervisi langsung, dan evaluasi Guru Pamong."
+              data-img="IMG/PPL_1/praktik1.jpeg"
+            >
               <div class="item-inner">
-                <img src="IMG/observasi.jpeg" alt="Observasi Lingkungan Sekolah" />
+                <img src="IMG/PPL_1/praktik1.jpeg" alt="Praktik Pembelajaran Terbimbing" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
                 <div class="item-overlay">
                   <div class="overlay-content">
-                    <span class="tag">PPL Terbimbing</span>
-                    <h3>Observasi Lingkungan Sekolah</h3>
-                    <p>Mahasiswa PPL melakukan observasi terkait lingkungan sekolah dan lingkungan belajar</p>
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-person-running"></i> PPL Terbimbing</span>
+                    <h3>Praktik Pembelajaran Terbimbing</h3>
+                    <p>Pelaksanaan instruksi gerak PJOK terbimbing dengan supervisi langsung Guru Pamong.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="gallery-item filter-item video">
-              <div class="item-inner video-card">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Video Evaluasi" frameborder="0" allowfullscreen></iframe>
-                <div class="video-info">
-                  <h3>Implementasi TGfU Bola Voli</h3>
-                  <p><i class="fa-solid fa-location-dot"></i> Lapangan Terbuka Utama</p>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="gallery-item filter-item foto wide">
+            <!-- 5. Kunjungan DPL -->
+            <div
+              class="gallery-item filter-item ppl1"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Kunjungan &amp; Supervisi Klinis DPL UNY"
+              data-desc="Sesi monitoring lapangan, refleksi pedagogik, dan penguatan kompetensi guru PJOK oleh Dosen Pembimbing Lapangan (DPL) Universitas Negeri Yogyakarta."
+              data-img="IMG/PPL_1/kunjungan dpl.jpeg"
+            >
               <div class="item-inner">
-                <img src="IMG/praktik1.jpeg" alt="Praktik Mengajar" />
+                <img src="IMG/PPL_1/kunjungan dpl.jpeg" alt="Kunjungan DPL" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
                 <div class="item-overlay">
                   <div class="overlay-content">
-                    <span class="tag">PPL Terbimbing</span>
-                    <h3>Praktik Mengajar</h3>
-                    <p>Mahasiswa PPL melakukan praktik mengajar di kelas.</p>
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-user-graduate"></i> PPL Terbimbing</span>
+                    <h3>Kunjungan &amp; Supervisi DPL</h3>
+                    <p>Diskusi refleksi kemajuan pengajaran dan evaluasi klinis bersama DPL UNY.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Kegiatan Sekolah -->
+            <div
+              class="gallery-item filter-item ppl1"
+              data-category="PPL Terbimbing"
+              data-badge-class="tag-ppl1"
+              data-title="Partisipasi Upacara &amp; Kegiatan Civitas Sekolah"
+              data-desc="Keterlibatan aktif mahasiswa PPL dalam pembinaan karakter, upacara bendera hari Senin, dan kegiatan kebersamaan guru-karyawan sekolah mitra."
+              data-img="IMG/PPL_1/kegiatan sekolah.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_1/kegiatan sekolah.jpeg" alt="Kegiatan Upacara Sekolah" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl1"><i class="fa-solid fa-flag"></i> PPL Terbimbing</span>
+                    <h3>Partisipasi Kegiatan Sekolah</h3>
+                    <p>Integrasi aktif dalam pembinaan tata upacara dan kegiatan kebersamaan sekolah.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= PPL 2 : MANDIRI ================= -->
+            <!-- 7. Bimbingan GP (Tall) -->
+            <div
+              class="gallery-item filter-item ppl2 tall"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Bimbingan &amp; Telaah Modul Mandiri Bersama Guru Pamong"
+              data-desc="Konsultasi berkala, validasi modul ajar berdiferensiasi, instrumen asesmen gerak, serta analisis tindak lanjut refleksi siklus PPL 2 mandiri."
+              data-img="IMG/PPL_2/Bimbingan GP.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/Bimbingan GP.jpeg" alt="Bimbingan Guru Pamong" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-comments"></i> PPL Mandiri</span>
+                    <h3>Bimbingan Bersama Guru Pamong</h3>
+                    <p>Diskusi telaah modul ajar, rubrik asesmen, dan evaluasi siklus mengajar mandiri.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Jalan Sehat (Wide) -->
+            <div
+              class="gallery-item filter-item ppl2 wide"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Pendampingan Kegiatan Jalan Sehat Sekolah"
+              data-desc="Pengawalan rute, koordinasi keselamatan peserta, serta edukasi gaya hidup bugar aktif bagi seluruh warga sekolah dalam agenda jalan sehat berkala."
+              data-img="IMG/PPL_2/jalan sehat.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/jalan sehat.jpeg" alt="Pendampingan Jalan Sehat" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-shoe-prints"></i> PPL Mandiri</span>
+                    <h3>Pendampingan Jalan Sehat</h3>
+                    <p>Pengawalan rute dan edukasi kebugaran jasmani seluruh warga sekolah.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Kamis Pon -->
+            <div
+              class="gallery-item filter-item ppl2"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Peringatan Budaya &amp; Busana Tradisional Kamis Pon"
+              data-desc="Penguatan Profil Pelajar Pancasila berdimensi berkebinekaan global dan pelestarian adat istiadat kearifan lokal Daerah Istimewa Yogyakarta."
+              data-img="IMG/PPL_2/Kamis Pon.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/Kamis Pon.jpeg" alt="Budaya Adat Kamis Pon" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-landmark"></i> PPL Mandiri</span>
+                    <h3>Peringatan Budaya Kamis Pon</h3>
+                    <p>Pelestarian busana adat Jawa dan penguatan kearifan lokal Yogyakarta di sekolah.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Kegiatan 5S -->
+            <div
+              class="gallery-item filter-item ppl2"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Penyambutan Pagi Pembiasaan Budaya 5S"
+              data-desc="Aksi nyata menyambut kehadiran peserta didik di gerbang utama sekolah dengan Senyum, Salam, Sapa, Sopan, dan Santun membentuk kultur budi pekerti luhur."
+              data-img="IMG/PPL_2/Kegiatan 5S.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/Kegiatan 5S.jpeg" alt="Budaya 5S Sekolah" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-handshake"></i> PPL Mandiri</span>
+                    <h3>Pembiasaan Budaya 5S Sekolah</h3>
+                    <p>Menyambut siswa di gerbang pagi dengan Senyum, Salam, Sapa, Sopan, dan Santun.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Kegiatan ASTS -->
+            <div
+              class="gallery-item filter-item ppl2"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Pengawasan Asesmen Sumatif Tengah Semester (ASTS)"
+              data-desc="Tanggung jawab profesional mahasiswa dalam ketertiban kepengawasan ujian ASTS, menjamin iklim evaluasi yang jujur, tenang, dan akuntabel."
+              data-img="IMG/PPL_2/Kegiatan ASTS.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/Kegiatan ASTS.jpeg" alt="Pengawasan ASTS" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-pen-ruler"></i> PPL Mandiri</span>
+                    <h3>Pengawasan Ujian ASTS</h3>
+                    <p>Kepengawasan profesional Asesmen Sumatif Tengah Semester sekolah mitra.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Kebersihan Tugu -->
+            <div
+              class="gallery-item filter-item ppl2"
+              data-category="PPL Mandiri"
+              data-badge-class="tag-ppl2"
+              data-title="Aksi Peduli Lingkungan &amp; Kebersihan Tugu Sekolah"
+              data-desc="Gotong royong merawat kebersihan dan estetika area tugu ikonik sekolah, menumbuhkan kepedulian lingkungan hidup sehat bagi civitas akademika."
+              data-img="IMG/PPL_2/Kebersihan Tugu.jpeg"
+            >
+              <div class="item-inner">
+                <img src="IMG/PPL_2/Kebersihan Tugu.jpeg" alt="Kebersihan Tugu Sekolah" loading="lazy" />
+                <button type="button" class="quick-zoom-btn" title="Perbesar Foto"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="item-overlay">
+                  <div class="overlay-content">
+                    <span class="tag tag-ppl2"><i class="fa-solid fa-broom"></i> PPL Mandiri</span>
+                    <h3>Kebersihan Tugu Sekolah</h3>
+                    <p>Aksi gotong royong peduli lingkungan merawat ikon tugu sekolah yang asri.</p>
                   </div>
                 </div>
               </div>
@@ -162,6 +382,21 @@
           </div>
         </div>
       </section>
+
+      <!-- Lightbox Modal Interaktif -->
+      <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+        <div class="lightbox-dialog" role="dialog" aria-modal="true">
+          <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+          <div class="lightbox-img-wrap">
+            <img src="" alt="" id="lightboxImg" />
+          </div>
+          <div class="lightbox-body">
+            <span class="lightbox-tag tag-ppl1" id="lightboxTag">PPL Terbimbing</span>
+            <h3 class="lightbox-title" id="lightboxTitle">Judul Dokumentasi</h3>
+            <p class="lightbox-desc" id="lightboxDesc">Deskripsi detail dokumentasi kegiatan lapangan.</p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -175,7 +410,7 @@
 
         <!-- PORTOFOLIO 1 -->
         <div class="footer-col links-col">
-          <h4><i class="fa-solid fa-book-open"></i> E-Portofolio 1</h4>
+          <h4><i class="fa-solid fa-book-open"></i> Jejak PPL 1</h4>
 
           <ul>
             <li>
@@ -183,30 +418,46 @@
             </li>
 
             <li>
-              <a href="artefak.html"> <i class="fa-solid fa-file-waveform"></i> Artefak Produk </a>
+              <a href="PPL_1/artefak.html"> <i class="fa-solid fa-file-waveform"></i> Artefak Produk </a>
             </li>
 
             <li>
-              <a href="penilaian.html"> <i class="fa-solid fa-list-check"></i> Instrumen Penilaian </a>
+              <a href="PPL_1/penilaian.html"> <i class="fa-solid fa-list-check"></i> Instrumen Penilaian </a>
             </li>
 
             <li>
-              <a href="modelguru.html"> <i class="fa-solid fa-chalkboard-user"></i> Model Guru </a>
+              <a href="PPL_1/modelguru.html"> <i class="fa-solid fa-chalkboard-user"></i> Model Guru </a>
             </li>
           </ul>
         </div>
 
         <!-- PORTOFOLIO 2 -->
         <div class="footer-col links-col">
-          <h4><i class="fa-solid fa-layer-group"></i> E-Portofolio 2</h4>
+          <h4><i class="fa-solid fa-layer-group"></i> Jejak PPL 2</h4>
 
           <ul>
             <li>
-              <a href="refleksi.html"> <i class="fa-solid fa-arrows-rotate"></i> Refleksi Akhir </a>
+              <a href="PPL_2/rancangan.html"> <i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran </a>
             </li>
 
             <li>
-              <a href="filosofi.html"> <i class="fa-solid fa-seedling"></i> Filosofi Mengajar </a>
+              <a href="PPL_2/materi.html"> <i class="fa-solid fa-book-open"></i> Materi Pembelajaran </a>
+            </li>
+
+            <li>
+              <a href="PPL_2/media.html"> <i class="fa-solid fa-photo-film"></i> Media Pembelajaran </a>
+            </li>
+
+            <li>
+              <a href="PPL_2/video.html"> <i class="fa-solid fa-video"></i> Video Praktik Mengajar </a>
+            </li>
+
+            <li>
+              <a href="PPL_2/non-mengajar.html"> <i class="fa-solid fa-people-group"></i> Kegiatan Non-Mengajar </a>
+            </li>
+
+            <li>
+              <a href="PPL_2/instrumen.html"> <i class="fa-solid fa-list-check"></i> Instrumen Penilaian </a>
             </li>
           </ul>
         </div>
@@ -240,53 +491,122 @@
     </footer>
 
     <script>
-      // Filter Gallery Logic (Interaktif)
-      const filterBtns = document.querySelectorAll(".filter-btn");
+      // 1. Logika Filter Gallery (Semua, PPL 1 Terbimbing, PPL 2 Mandiri)
+      const filterBtns = document.querySelectorAll(".filter-tab-btn");
       const filterItems = document.querySelectorAll(".filter-item");
 
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
-          // Hapus class active dari semua tombol
-          filterBtns.forEach((button) => button.classList.remove("active"));
-          // Tambahkan class active ke tombol yang diklik
+          filterBtns.forEach((b) => b.classList.remove("active"));
           btn.classList.add("active");
 
-          const filterValue = btn.getAttribute("data-filter");
+          const filterVal = btn.getAttribute("data-filter");
 
           filterItems.forEach((item) => {
-            if (filterValue === "all" || item.classList.contains(filterValue)) {
+            if (filterVal === "all" || item.classList.contains(filterVal)) {
               item.style.display = "block";
               setTimeout(() => {
                 item.style.opacity = "1";
                 item.style.transform = "scale(1)";
-              }, 50);
+              }, 40);
             } else {
               item.style.opacity = "0";
-              item.style.transform = "scale(0.8)";
+              item.style.transform = "scale(0.85)";
               setTimeout(() => {
                 item.style.display = "none";
-              }, 300);
+              }, 250);
             }
           });
         });
       });
 
-      // Navbar scroll effect
+      // 2. Logika Lightbox Modal Interaktif
+      const lightboxModal = document.getElementById("lightboxModal");
+      const lightboxClose = document.getElementById("lightboxClose");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxTitle = document.getElementById("lightboxTitle");
+      const lightboxDesc = document.getElementById("lightboxDesc");
+      const lightboxTag = document.getElementById("lightboxTag");
+
+      function openLightbox(item) {
+        const imgSrc = item.getAttribute("data-img");
+        const title = item.getAttribute("data-title");
+        const desc = item.getAttribute("data-desc");
+        const category = item.getAttribute("data-category");
+        const badgeClass = item.getAttribute("data-badge-class");
+
+        if (lightboxImg) lightboxImg.src = imgSrc;
+        if (lightboxTitle) lightboxTitle.textContent = title;
+        if (lightboxDesc) lightboxDesc.textContent = desc;
+        if (lightboxTag) {
+          lightboxTag.textContent = category;
+          lightboxTag.className = "lightbox-tag " + (badgeClass || "tag-ppl1");
+        }
+
+        if (lightboxModal) {
+          lightboxModal.classList.add("active");
+          lightboxModal.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeLightbox() {
+        if (lightboxModal) {
+          lightboxModal.classList.remove("active");
+          lightboxModal.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+      }
+
+      // Pasang listener klik pada setiap item galeri
+      document.querySelectorAll(".gallery-item").forEach((item) => {
+        item.addEventListener("click", (e) => {
+          openLightbox(item);
+        });
+      });
+
+      // Tutup via tombol close
+      if (lightboxClose) {
+        lightboxClose.addEventListener("click", (e) => {
+          e.stopPropagation();
+          closeLightbox();
+        });
+      }
+
+      // Tutup jika klik pada backdrop modal di luar dialog
+      if (lightboxModal) {
+        lightboxModal.addEventListener("click", (e) => {
+          if (e.target === lightboxModal) {
+            closeLightbox();
+          }
+        });
+      }
+
+      // Tutup via keyboard Escape
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightboxModal && lightboxModal.classList.contains("active")) {
+          closeLightbox();
+        }
+      });
+
+      // 3. Efek Scroll Navbar
       const navbar = document.getElementById("navbar");
       window.addEventListener("scroll", () => {
         if (window.scrollY > 50) navbar.classList.add("scrolled");
         else navbar.classList.remove("scrolled");
       });
 
-      // Mobile Menu Hamburger
+      // 4. Hamburger Menu Mobile
       const hamburger = document.getElementById("hamburger");
       const navMenu = document.getElementById("nav-menu");
-      hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        hamburger.classList.toggle("active");
-      });
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+      }
 
-      // Mobile Dropdown Logic
+      // 5. Dropdown Mobile
       const dropdownBtns = document.querySelectorAll(".dropbtn");
       dropdownBtns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
@@ -309,17 +629,20 @@
         });
       });
 
-      // Scroll Reveal Animation
+      // 6. Animasi Scroll Reveal
       function reveal() {
-        var reveals = document.querySelectorAll(".reveal, .fade-in-up");
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 80;
-          if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("active");
-        }
+        const reveals = document.querySelectorAll(".reveal, .fade-in-up");
+        const windowHeight = window.innerHeight;
+        reveals.forEach((el) => {
+          const elementTop = el.getBoundingClientRect().top;
+          const elementVisible = 60;
+          if (elementTop < windowHeight - elementVisible) {
+            el.classList.add("active");
+          }
+        });
       }
       window.addEventListener("scroll", reveal);
+      window.addEventListener("resize", reveal);
       reveal();
     </script>
   </body>
